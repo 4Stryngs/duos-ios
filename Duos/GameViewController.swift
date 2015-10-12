@@ -220,7 +220,6 @@ class GameViewController: UIViewController {
     }
     
     private func flipCard(cardImageView: UIImageView!, back: Bool) {
-        // let index = cardImageView.tag > cards.count ? cardImageView.tag - cards.count - 1 : cardImageView.tag - 1
         let index = cardImageView.tag - 1
         cards[index].flipped = true
         
