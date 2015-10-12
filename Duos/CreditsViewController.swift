@@ -22,8 +22,10 @@ class CreditsViewController: UIViewController {
         
         creditsTextView.setContentOffset(CGPoint(x: 0.0, y: 0.0), animated: false)
         
-        UIView.animateWithDuration(0.5) { () -> Void in
-            self.creditsTextView.alpha = 1.0
+        if creditsTextView.alpha == 0.0 {
+            UIView.animateWithDuration(0.5) { () -> Void in
+                self.creditsTextView.alpha = 1.0
+            }
         }
     }
 

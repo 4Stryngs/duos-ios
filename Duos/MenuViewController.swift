@@ -47,6 +47,7 @@ class MenuViewController: UIViewController {
                 facebookController.dismissViewControllerAnimated(true, completion: nil)
             }
             
+            // URLs will change later, now point to one of my apps in the App Store for the purpose of functionality
             facebookController.addURL(NSURL(string: "https://itunes.apple.com/us/app/smart-chimp-critical-thinking/id972549995?ls=1&mt=8"))
             
             presentViewController(facebookController, animated: true, completion: nil)
@@ -80,6 +81,7 @@ class MenuViewController: UIViewController {
             
             twitterController.setInitialText("Have fun matching cards and training your #memory with #Duo. Available on the App Store.")
             
+            // URLs will change later, now point to one of my apps in the App Store for the purpose of functionality
             twitterController.addURL(NSURL(string: "https://itunes.apple.com/us/app/smart-chimp-critical-thinking/id972549995?ls=1&mt=8"))
             
             presentViewController(twitterController, animated: true, completion: nil)
