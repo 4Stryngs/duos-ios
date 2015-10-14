@@ -48,7 +48,7 @@ class MenuViewController: UIViewController {
             }
             
             // URLs will change later, now point to one of my apps in the App Store for the purpose of functionality
-            facebookController.addURL(NSURL(string: "https://itunes.apple.com/us/app/smart-chimp-critical-thinking/id972549995?ls=1&mt=8"))
+            facebookController.addURL(NSURL(string: "https://itunes.apple.com/us/app/duos-card-matching-game/id1049082793?ls=1&mt=8"))
             
             presentViewController(facebookController, animated: true, completion: nil)
         } else {
@@ -79,10 +79,10 @@ class MenuViewController: UIViewController {
                 twitterController.dismissViewControllerAnimated(true, completion: nil)
             }
             
-            twitterController.setInitialText("Have fun matching cards and training your #memory with #Duo. Available on the App Store.")
+            twitterController.setInitialText("Having fun matching cards and training my #memory with #Duos, by @itsProf. Available on the App Store.")
             
             // URLs will change later, now point to one of my apps in the App Store for the purpose of functionality
-            twitterController.addURL(NSURL(string: "https://itunes.apple.com/us/app/smart-chimp-critical-thinking/id972549995?ls=1&mt=8"))
+            twitterController.addURL(NSURL(string: "https://itunes.apple.com/us/app/duos-card-matching-game/id1049082793?ls=1&mt=8"))
             
             presentViewController(twitterController, animated: true, completion: nil)
         } else {
