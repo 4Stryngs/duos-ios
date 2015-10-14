@@ -2,7 +2,7 @@
 //  HighScore.swift
 //  Duos
 //
-//  Created by Jorge Tapia on 10/11/15.
+//  Created by Jorge Tapia on 10/14/15.
 //  Copyright © 2015 Jorge Tapia. All rights reserved.
 //
 
@@ -11,7 +11,7 @@ import CoreData
 
 class HighScore: NSManagedObject {
 
-    class func createNew(time: String?, date: NSDate?) -> HighScore? {
+    class func createNew(time: NSNumber?, date: NSDate?) -> HighScore? {
         if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
             let managedObjectContext = appDelegate.managedObjectContext
             
@@ -38,6 +38,9 @@ class HighScore: NSManagedObject {
                 let fetchRequest = NSFetchRequest()
                 fetchRequest.entity = entity
                 
+                let sortDescriptor = NSSortDescriptor(key: "time", ascending: true)
+                fetchRequest.sortDescriptors = [sortDescriptor]
+                
                 highScores = try managedObjectContext.executeFetchRequest(fetchRequest)
             } catch let error as NSError {
                 NSLog("An error ocurred while fetching high scores: \(error.userInfo)")
@@ -61,4 +64,5 @@ class HighScore: NSManagedObject {
             appDelegate.saveContext()
         }
     }
+
 }

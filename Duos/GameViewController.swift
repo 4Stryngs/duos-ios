@@ -193,7 +193,7 @@ class GameViewController: UIViewController {
                                     self.timer.invalidate()
                                     
                                     if let appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate {
-                                        HighScore.createNew(self.timeLabel.text, date: NSDate())
+                                        HighScore.createNew(self.timeInSeconds, date: NSDate())
                                         appDelegate.saveContext()
                                     }
                                     
@@ -238,31 +238,7 @@ class GameViewController: UIViewController {
     func updateTimeLabel() {
         ++timeInSeconds
         
-        var secondsString = String()
-        var minutesString = String()
-        
-        var seconds = timeInSeconds % 60
-        let minutes = timeInSeconds / 60
-        
-        if seconds > 59 {
-            seconds = seconds - (seconds * 60)
-        }
-        
-        // Format seconds
-        if 0...9 ~= seconds {
-            secondsString = "0\(seconds)"
-        } else if 10...59 ~= seconds {
-            secondsString = String(seconds)
-        }
-        
-        // Format minutes
-        if 0...9 ~= minutes {
-            minutesString = "0\(minutes)"
-        } else {
-            minutesString = String(minutes)
-        }
-        
-        timeLabel.text = "\(minutesString):\(secondsString)"
+        timeLabel.text = AppUtils.formatTimeInSeconds(timeInSeconds)
     }
     
     // MARK: - Navigation

@@ -14,9 +14,10 @@
 		6C42CEA21BCAE12C00D61116 /* 131660__bertrof__game-sound-correct.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C42CEA11BCAE12C00D61116 /* 131660__bertrof__game-sound-correct.wav */; settings = {ASSET_TAGS = (); }; };
 		6C42CEA41BCAEA3700D61116 /* VictoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42CEA31BCAEA3700D61116 /* VictoryViewController.swift */; settings = {ASSET_TAGS = (); }; };
 		6C42CEA61BCAEE5C00D61116 /* 270402__littlerobotsoundfactory__jingle-win-00.wav in Resources */ = {isa = PBXBuildFile; fileRef = 6C42CEA51BCAEE5C00D61116 /* 270402__littlerobotsoundfactory__jingle-win-00.wav */; settings = {ASSET_TAGS = (); }; };
-		6C42CEA91BCAF36A00D61116 /* HighScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42CEA71BCAF36A00D61116 /* HighScore+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
-		6C42CEAA1BCAF36A00D61116 /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C42CEA81BCAF36A00D61116 /* HighScore.swift */; settings = {ASSET_TAGS = (); }; };
 		6C42CEAC1BCAF9CD00D61116 /* 177156__abstudios__water-drop.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 6C42CEAB1BCAF9CD00D61116 /* 177156__abstudios__water-drop.mp3 */; settings = {ASSET_TAGS = (); }; };
+		6CB347941BCEE07D007C5F8F /* AppUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB347931BCEE07D007C5F8F /* AppUtils.swift */; settings = {ASSET_TAGS = (); }; };
+		6CB347971BCEE1CC007C5F8F /* HighScore+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB347951BCEE1CC007C5F8F /* HighScore+CoreDataProperties.swift */; settings = {ASSET_TAGS = (); }; };
+		6CB347981BCEE1CC007C5F8F /* HighScore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CB347961BCEE1CC007C5F8F /* HighScore.swift */; settings = {ASSET_TAGS = (); }; };
 		6CE1EF681BC83308000C7B82 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1EF671BC83308000C7B82 /* AppDelegate.swift */; };
 		6CE1EF6A1BC83308000C7B82 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CE1EF691BC83308000C7B82 /* MenuViewController.swift */; };
 		6CE1EF6D1BC83308000C7B82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CE1EF6B1BC83308000C7B82 /* Main.storyboard */; };
@@ -39,9 +40,10 @@
 		6C42CEA11BCAE12C00D61116 /* 131660__bertrof__game-sound-correct.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "131660__bertrof__game-sound-correct.wav"; sourceTree = "<group>"; };
 		6C42CEA31BCAEA3700D61116 /* VictoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VictoryViewController.swift; sourceTree = "<group>"; };
 		6C42CEA51BCAEE5C00D61116 /* 270402__littlerobotsoundfactory__jingle-win-00.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "270402__littlerobotsoundfactory__jingle-win-00.wav"; sourceTree = "<group>"; };
-		6C42CEA71BCAF36A00D61116 /* HighScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HighScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		6C42CEA81BCAF36A00D61116 /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 		6C42CEAB1BCAF9CD00D61116 /* 177156__abstudios__water-drop.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "177156__abstudios__water-drop.mp3"; sourceTree = "<group>"; };
+		6CB347931BCEE07D007C5F8F /* AppUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppUtils.swift; sourceTree = "<group>"; };
+		6CB347951BCEE1CC007C5F8F /* HighScore+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HighScore+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		6CB347961BCEE1CC007C5F8F /* HighScore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighScore.swift; sourceTree = "<group>"; };
 		6CE1EF641BC83308000C7B82 /* Duos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Duos.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CE1EF671BC83308000C7B82 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CE1EF691BC83308000C7B82 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6CB347921BCEE06D007C5F8F /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				6CB347931BCEE07D007C5F8F /* AppUtils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		6CE1EF5B1BC83308000C7B82 = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				6CE1EF811BC8414B000C7B82 /* Sounds */,
+				6CB347921BCEE06D007C5F8F /* Utils */,
 				6CE1EF931BC88085000C7B82 /* Extensions */,
 				6CE1EF8E1BC86CA6000C7B82 /* Model */,
 				6CE1EF7E1BC836BA000C7B82 /* Audio Manager */,
@@ -133,8 +144,8 @@
 			isa = PBXGroup;
 			children = (
 				6C42CE9D1BCA0A8500D61116 /* Card.swift */,
-				6C42CEA71BCAF36A00D61116 /* HighScore+CoreDataProperties.swift */,
-				6C42CEA81BCAF36A00D61116 /* HighScore.swift */,
+				6CB347951BCEE1CC007C5F8F /* HighScore+CoreDataProperties.swift */,
+				6CB347961BCEE1CC007C5F8F /* HighScore.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,12 +239,13 @@
 				6CE1EF871BC841E8000C7B82 /* GameViewController.swift in Sources */,
 				6C3E440D1BCC017100B29A77 /* HighScoresViewController.swift in Sources */,
 				6CE1EF701BC83308000C7B82 /* Duos.xcdatamodeld in Sources */,
-				6C42CEA91BCAF36A00D61116 /* HighScore+CoreDataProperties.swift in Sources */,
+				6CB347981BCEE1CC007C5F8F /* HighScore.swift in Sources */,
+				6CB347941BCEE07D007C5F8F /* AppUtils.swift in Sources */,
 				6CE1EF6A1BC83308000C7B82 /* MenuViewController.swift in Sources */,
-				6C42CEAA1BCAF36A00D61116 /* HighScore.swift in Sources */,
 				6CE1EF951BC88098000C7B82 /* Array+Extensions.swift in Sources */,
 				6C3E44111BCC2D5D00B29A77 /* CreditsViewController.swift in Sources */,
 				6C42CEA41BCAEA3700D61116 /* VictoryViewController.swift in Sources */,
+				6CB347971BCEE1CC007C5F8F /* HighScore+CoreDataProperties.swift in Sources */,
 				6CE1EF801BC836C5000C7B82 /* AudioManager.swift in Sources */,
 				6C42CE9E1BCA0A8500D61116 /* Card.swift in Sources */,
 				6CE1EF681BC83308000C7B82 /* AppDelegate.swift in Sources */,

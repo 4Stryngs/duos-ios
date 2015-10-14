@@ -49,7 +49,7 @@ class HighScoresViewController: UIViewController {
     private func configureCell(cell: UITableViewCell, indexPath: NSIndexPath) {
         let highScore = highScores[indexPath.row]
         
-        cell.textLabel?.text = "\(indexPath.row + 1))  \(highScore.time!)"
+        cell.textLabel?.text = "\(indexPath.row + 1))  \(AppUtils.formatTimeInSeconds(highScore.time!.integerValue))"
         
         let dateFormatter = NSDateFormatter()
         dateFormatter.dateFormat = "E, dd/MM/y"
